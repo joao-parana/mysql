@@ -1,0 +1,8 @@
+# docker rm wpdb && docker run -d --name wpdb -p 9306:3306 parana/mysql 
+docker run -d --name mysql_db -p 9306:3306 parana/mysql 
+echo "IP do Boot2Docker = `boot2docker ip`"
+MYSQL_ROOT_PASSWORD=xpto
+MYSQL_DATABASE=wp-db
+MYSQL_USER=wp
+MYSQL_PASSWORD=secret
+mysql -h `boot2docker ip` -u root -p -P 9306
