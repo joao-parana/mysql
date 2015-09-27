@@ -4,6 +4,9 @@
 
 Usado no curso [http://joao-parana.com.br/blog/curso-docker/](http://joao-parana.com.br/blog/curso-docker/) criado para a Escola Linux.
 
+
+Veja no Diagrama abaixo o contêiner e seu nome, os arquivos de inicialização durante o start e a porta do MySQL
+
 ![https://raw.githubusercontent.com/joao-parana/mysql/master/docs/jessie-mysql.png](https://raw.githubusercontent.com/joao-parana/mysql/master/docs/jessie-mysql.png)
 
 
@@ -14,8 +17,8 @@ Criando a imagem
 Substitua o token `HUB-USER-NAME` pelo seu login em [http://hub.docker.com](http://hub.docker.com)
 
 
-Usaremos aqui o nem `mysql_db` para o Contêiner.
-Caso exista algum conteiner com o mesmo nome rodando 
+Usaremos aqui o nome `mysql_db` para o Contêiner.
+Caso exista algum conteiner com o mesmo nome rodando, 
 podemos pará-lo assim:
 
     docker stop mysql_db
