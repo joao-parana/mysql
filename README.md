@@ -3,7 +3,10 @@
 > Imagem Docker para MySQL 5.6.26 rodando no Debian Jessie (version 8)
 
 Usado no curso [http://joao-parana.com.br/blog/curso-docker/](http://joao-parana.com.br/blog/curso-docker/) criado para a Escola Linux.
-    
+
+![docs/img/jessie-mysql.png](docs/img/jessie-mysql.png)
+
+
 Criando a imagem
 
     docker build -t HUB-USER-NAME/mysql  .
