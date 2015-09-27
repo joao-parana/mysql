@@ -4,7 +4,7 @@
 
 Usado no curso [http://joao-parana.com.br/blog/curso-docker/](http://joao-parana.com.br/blog/curso-docker/) criado para a Escola Linux.
 
-![docs/img/jessie-mysql.png](docs/img/jessie-mysql.png)
+![https://raw.githubusercontent.com/joao-parana/mysql/master/docs/jessie-mysql.png](https://raw.githubusercontent.com/joao-parana/mysql/master/docs/jessie-mysql.png)
 
 
 Criando a imagem
