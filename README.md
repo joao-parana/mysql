@@ -16,11 +16,11 @@ Criando a imagem
 
 Substitua o token `HUB-USER-NAME` pelo seu login em [http://hub.docker.com](http://hub.docker.com)
 
-Após o build podemos inspecionar os layers da imagem gerada
+Após o build podemos inspecionar os layers da imagem gerada usando o comando `dockviz images -t`.
 
-<script type="text/javascript" src="https://asciinema.org/a/eu83kxrvgk0to1v5f4imp3xzj.js" id="asciicast-eu83kxrvgk0to1v5f4imp3xzj" async></script>
+<a href="https://asciinema.org/a/eu83kxrvgk0to1v5f4imp3xzj" target="_blank"><img src="https://asciinema.org/a/eu83kxrvgk0to1v5f4imp3xzj.png" /></a>
 
-Usaremos aqui o nome `mysql_db` para o Contêiner.
+Usaremos neste projeto, o nome `mysql_db` para o Contêiner.
 Caso exista algum conteiner com o mesmo nome rodando, 
 podemos pará-lo assim:
 
