@@ -16,6 +16,10 @@ Criando a imagem
 
 Substitua o token `HUB-USER-NAME` pelo seu login em [http://hub.docker.com](http://hub.docker.com)
 
+Após o build podemos inspecionar os layers da imagem gerada
+
+[![asciicast](https://asciinema.org/a/eu83kxrvgk0to1v5f4imp3xzj.png)](https://asciinema.org/a/eu83kxrvgk0to1v5f4imp3xzj)
+
 Usaremos aqui o nome `mysql_db` para o Contêiner.
 Caso exista algum conteiner com o mesmo nome rodando, 
 podemos pará-lo assim:
