@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y perl --no-install-recommends && rm -rf 
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5
 
 ENV MYSQL_MAJOR 5.6
-ENV MYSQL_VERSION 5.6.27
+ENV MYSQL_VERSION 5.6.29
 
 RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
 
@@ -41,7 +41,15 @@ RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf \
 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf \
 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
 
+RUN ls  -lAt / && \
+    echo "••• " && \
+    echo "••• `date` - Exibindo a versão do MySQL Server disponível no repositório" && \
+    echo "••• " && \
+    echo " " && \
+    apt-cache show mysql-server | grep ${MYSQL_MAJOR} 
+
 COPY run.sh /run.sh
 RUN chmod a+rx /run.sh
 EXPOSE 3306
 CMD ["/run.sh"]
+
